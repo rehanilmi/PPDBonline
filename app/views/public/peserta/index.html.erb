@@ -1,5 +1,5 @@
-<%= form_for(@data, url: url_for(action: 'index', peserta_id: @data.id), multipart: true ) do |f| %>
-<h1>Data Peserta</h1>
+<%= form_for(@data, url: url_for(action: 'index', pesertaaa_id: @data.id), multipart: true ) do |f| %>
+<h1>Data pesertaa</h1>
 
 <div class="table-responsive">
   <table class="table table-striped">
@@ -7,110 +7,110 @@
     <tr>
       <td>Nama</td>
       <td>:</td>
-      <td><%= @data.peserta_nama %></td>
+      <td><%= @data.pesertaa_nama %></td>
     </tr>
 
     <tr>
       <td>Tanggal Lahir</td>
       <td>:</td>
-      <td><%= @data.peserta_tanggal_lahir %></td>
+      <td><%= @data.pesertaaa_tanggal_lahir %></td>
     </tr>
     <tr>
       <td>Tempat Lahir</td>
       <td>:</td>
-      <td><%= @data.peserta_tempat_lahir %></td>
+      <td><%= @data.pesertaa_tempat_lahir %></td>
     </tr>
     <tr>
       <td>Jenis Kelamin</td>
       <td>:</td>
-      <td><%= @data.peserta_jk %></td>
+      <td><%= @data.pesertaa_jk %></td>
     </tr>
     <tr>
       <td>NIK</td>
       <td>:</td>
-      <td><%= @data.peserta_nik %></td>
+      <td><%= @data.pesertaa_nik %></td>
     </tr>
     <tr>
       <td>Alamat</td>
       <td>:</td>
-      <td><%= @data.peserta_alamat %></td>
+      <td><%= @data.pesertaa_alamat %></td>
     </tr>
     <tr>
       <td>Nama Ayah</td>
       <td>:</td>
-      <td><%= @data.peserta_nama_ayah %></td>
+      <td><%= @data.pesertaa_nama_ayah %></td>
     </tr>
     <tr>
       <td>Nama Ibu</td>
       <td>:</td>
-      <td><%= @data.peserta_nama_ibu %></td>
+      <td><%= @data.pesertaa_nama_ibu %></td>
     </tr>
     <tr>
       <td>Tinggi</td>
       <td>:</td>
-      <td><%= @data.peserta_tinggi %></td>
+      <td><%= @data.pesertaa_tinggi %></td>
     </tr>
     <tr>
       <td>Berat Badan</td>
       <td>:</td>
-      <td><%= @data.peserta_bb %></td>
+      <td><%= @data.pesertaa_bb %></td>
     </tr>
     <tr>
       <td>Jarak sekolah</td>
       <td>:</td>
-      <td><%= @data.peserta_jarak_sekolah %></td>
+      <td><%= @data.pesertaa_jarak_sekolah %></td>
     </tr>
     <tr>
       <td>Golongan darah</td>
       <td>:</td>
-      <td><%= @data.peserta_gol_darah %></td>
+      <td><%= @data.pesertaa_gol_darah %></td>
     </tr>
     <tr>
       <td>Jumlah saudara</td>
       <td>:</td>
-      <td><%= @data.peserta_jumlah_saudara %></td>
+      <td><%= @data.pesertaa_jumlah_saudara %></td>
     </tr>
     <tr>
       <td>Telepon</td>
       <td>:</td>
-      <td><%= @data.peserta_telepon %></td>
+      <td><%= @data.pesertaa_telepon %></td>
     </tr>
     <tr>
       <td>Email</td>
       <td>:</td>
-      <td><%= @data.peserta_email %></td>
+      <td><%= @data.pesertaa_email %></td>
     </tr>
     <tr>
       <td>Bahasa sehari-hari</td>
       <td>:</td>
-      <td><%= @data.peserta_bahasa_seharihari %></td>
+      <td><%= @data.pesertaa_bahasa_seharihari %></td>
     </tr>
     <tr>
       <td>Jenjang Pendidikan</td>
       <td>:</td>
-      <td><%= @data.peserta_jenjang_pendidikan %></td>
+      <td><%= @data.pesertaa_jenjang_pendidikan %></td>
     </tr>
     <tr>
       <td>Status</td>
       <td>:</td>
-      <td><%= @data.peserta_status %></td>
+      <td><%= @data.pesertaa_status %></td>
     </tr>
     <tr>
       <td>Kategori</td>
       <td>:</td>
-      <td><%= @data.peserta_kategori %></td>
+      <td><%= @data.pesertaa_kategori %></td>
     </tr>
     <tr>
       <td>JWT Token</td>
       <td>:</td>
-      <td><%= @data.peserta_jwt_token %></td>
+      <td><%= @data.pesertaa_jwt_token %></td>
     </tr>
     <tr>
       <td>Photo</td>
       <td>:</td>
-      <td><img src="<%= @data.peserta_photo %>" style="width: 100px"></td>
+      <td><img src="<%= @data.pesertaa_photo %>" style="width: 100px"></td>
     </tr>
   </table>
-<a href="<%= url_for action: 'edit', peserta_id: @data.id %>" class="btn btn-small btn-default">Edit</a>
+<a href="<%= url_for action: 'edit', pesertaa_id: @data.id %>" class="btn btn-small btn-default">Edit</a>
 </div>
 <% end %>

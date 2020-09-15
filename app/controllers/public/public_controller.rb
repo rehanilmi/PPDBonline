@@ -10,8 +10,7 @@ class Public::PublicController < ApplicationController
   end
 
   def pengumuman
-      info = params[:info]
-      @data = Info.find(params[:info_id])
+    @infos = Info.all
   end
 
   def vdm

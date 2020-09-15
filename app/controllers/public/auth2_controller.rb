@@ -7,8 +7,9 @@ class Public::Auth2Controller < ApplicationController
       end
 
       def daftar_post
-        @email            = params[:orang_email].delete(' ').downcase
-        @password         = params[:orang_password]
+        # @email            = params[:pesertaa_email].delete(' ').downcase
+        @email            = params[:pesertaa_email]
+        @password         = params[:pesertaa_password]
         @password_confirm = params[:password_confirm]
         @pass             = BCrypt::Password.create(@password)
 
@@ -18,17 +19,17 @@ class Public::Auth2Controller < ApplicationController
 
           if @password.length >= 8
 
-            if Orang.where(orang_email: @email).count == 0
+            if Pesertaa.where(pesertaa_email: @email).count == 0
 
-              @ora                    = Orang.new
-              @ora.orang_email         = @email
-              @ora.orang_password      = @pass
+              @ora                    = Pesertaa.new
+              @ora.pesertaa_email         = @email
+              @ora.pesertaa_password      = @pass
               # @ora.orang_status        = 'inactive'
               @ora.save
 
               flash[:notif] = 'Terimakasih telah mendaftar'
 
-              redirect_to controller: '/public/auth2/auth2', action: 'masuk'
+              redirect_to controller: '/public/auth2', action: 'masuk'
 
             else
               flash[:notif] = 'Email sudah terdaftar. Silahkan login'
@@ -55,10 +56,10 @@ class Public::Auth2Controller < ApplicationController
       end
 
       def masuk_post
-        @email = params[:orang_email]
-        @password = params[:orang_password]
+        @email = params[:pesertaa_email]
+        @password = params[:pesertaa_password]
 
-        @peserta = Orang.find_by(orang_email: @email)
+        @peserta = Pesertaa.find_by(pesertaa_email: @email)
 
         if @peserta.blank? # hasilnya false atau true
           flash[:notif] = 'Unregistered email'
@@ -69,12 +70,12 @@ class Public::Auth2Controller < ApplicationController
 
           if @peserta.valid_password?(@password)
             # if @orang.orang_status == ''
-               session[:orang_id]    = @orang.id
-               session[:orang_email] = @orang.orang_email
-               session[:orang_tf]   = true
+               session[:pesertaa_id]    = @orang.id
+               session[:pesertaa_email] = @orang.pesertaa_email
+               session[:pesertaa_tf]   = true
             #   #TheMailMailer.login_notification(@orang.oadm_email).deliver_later
 
-              redirect_to controller: "/public/public", action: "guru"
+              redirect_to controller: "/public/public", action: "main"
 
             # else
             #   flash[:notif] = 'peserta ditolak'
