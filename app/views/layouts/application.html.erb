@@ -7,77 +7,106 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-    <!-- Third party plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/css/styles.css" rel="stylesheet" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PPDB - Selamat Datang PPDB ONLINE</title>
+    <link href="/theme/images/icon.png" rel="shorcut icon" >
+    <!-- Bootstrap CSS -->
+    <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Simple Line Font -->
+    <link href="/theme/css/simple-line-icons.css"  rel="stylesheet">
+    <!-- Slider / Carousel -->
+    <link href="/theme/css/slick.css"  rel="stylesheet">
+    <link href="/theme/css/slick-theme.css"  rel="stylesheet" >
+    <link href="/theme/css/owl.carousel.min.css" rel="stylesheet" >
+    <!-- Main CSS -->
+    <link href="/theme/css/style.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
-    <!-- Navigation-->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">PPDB
-              <img class="img-fluid" src="assets/img/logo.png" alt="" />
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-    <header class="masthead">
-      <%= render '/layouts/nav/public'%>
-      <!-- <div class="container h-100">
-          <div class="row h-100 align-items-center justify-content-center text-center">
-              <div class="col-lg-10 align-self-end">
-                  <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
-                  <hr class="divider my-4" />
-              </div>
-              <div class="col-lg-8 align-self-baseline">
-                  <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-              </div>
-          </div>
-      </div> -->
-    </header>
-    <% if notice %>
-    <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-    <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-    <%= yield %>
+
+     <header>
+        <%= render "layouts/nav/public" %>
+     </header>
+      <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+
     <!-- About-->
 
     <!-- Footer-->
-    <!-- <footer class="bg-light py-5">
-        <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
-    </footer> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="foot-logo">
+                            <img src="/theme/images/logo-white.png" class="img-fluid" alt="footer_logo">
+                        <p> © copyright by <a href="" target="_blank">Rehanul Fikri Ilmi :))))</a>. <br>All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sitemap">
+                            <h3>Menu Utama</h3>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Blog </a></li>
+                                <li><a href="">Gallery</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="sitemap">
+                          <h3>Akademik</h3>
+                          <ul>
+                              <li><a href="">Guru</a></li>
+                              <li><a href="">Siswa </a></li>
+                              <li><a href="">Pengumuman</a></li>
+                              <li><a href="">Agenda</a></li>
+                              <li><a href="">Download</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="address">
+                            <h3>Hubungi Kami</h3>
+                            <p><span>Alamat: </span> Padang, Sumatera Barat, INA. 11001</p>
+                            <p>Email : hexaaristia3@gmail.com
+                                <br> Phone : +91 555 668 986</p>
+                                <ul class="footer-social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="/js/scripts.js"></script>
-  </body>
+    <script src="/theme/js/jquery.min.js"></script>
+          <script src="/theme/js/tether.min.js"></script>
+          <script src="/theme/js/bootstrap.min.js"></script>
+          <!-- Plugins -->
+          <script src="/theme/js/slick.min.js"></script>
+          <script src="/theme/js/waypoints.min.js"></script>
+          <script src="/theme/js/counterup.min.js"></script>
+          <script src="/theme/js/owl.carousel.min.js"></script>
+          <script src="/theme/js/validate.js"></script>
+          <script src="/theme/js/tweetie.min.js"></script>
+          <!-- Subscribe -->
+          <script src="/theme/js/subscribe.js"></script>
+          <!-- Script JS -->
+          <script src="/theme/js/script.js"></script>
+        </body>
 </html>

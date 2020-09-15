@@ -1,5 +1,6 @@
 class Public::PublicController < ApplicationController
-
+  def main
+  end
   def guru
     @gurus = Guru.latest
   end
@@ -18,5 +19,5 @@ class Public::PublicController < ApplicationController
 
   def test
   end
-  
+
 end
