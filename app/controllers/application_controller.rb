@@ -8,14 +8,14 @@ class ApplicationController < ActionController::Base
   # -
   # == Todo
   # -
-  
+
   def login_sp_required
     if session[:admin_tf].nil? == true
       redirect_to "/sp/auth/masuk"
     end
   end
   def login_peserta_required
-    if session[:orang_tf].nil? == true
+    if session[:pesertaa_tf].nil? == true
       redirect_to "/public/auth2/auth2/masuk"
     end
   end

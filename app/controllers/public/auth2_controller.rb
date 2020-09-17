@@ -90,4 +90,12 @@ class Public::Auth2Controller < ApplicationController
         end
       end
 
+      def signout
+
+              #orang_log_record('get sp/auth/signout', params.to_json)
+
+              reset_session # reset whole session (SEPERTINYA TIDAK BEKERJA DI RAILS 5)
+
+              redirect_to controller: '/public/auth2', action: 'masuk'
+          end
 end

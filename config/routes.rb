@@ -10,6 +10,8 @@ root to: 'public#main'
         post  'auth2/daftar'     => 'auth2#daftar_post'
         get   'auth2/masuk'
         post  'auth2/masuk'      => 'auth2#masuk_post'
+        get  'auth2/signout'
+
       end
     end
 
@@ -26,8 +28,8 @@ root to: 'public#main'
   resource :peserta do
     collection do
       get    'index'             => 'peserta#index'
-      get    'edit/:peserta_id'  => 'peserta#edit'
-      patch  'edit/:peserta_id'  => 'peserta#edit_post'
+      get    'edit/:pesertaa_id'  => 'peserta#edit'
+      patch  'edit/:pesertaa_id'  => 'peserta#edit_post'
     end
   end
 
