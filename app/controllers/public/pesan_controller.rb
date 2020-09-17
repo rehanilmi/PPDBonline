@@ -1,5 +1,5 @@
 class Public::PesanController < ApplicationController
-before_action :login_peserta_required
+# before_action :login_peserta_required
   def baru
         @data = Pesan.new
   end

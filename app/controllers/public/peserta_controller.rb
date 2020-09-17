@@ -1,5 +1,5 @@
 class Public::PesertaController < ApplicationController
-before_action :login_peserta_required
+# before_action :login_peserta_required
   def index
     pesertaa = params[:pesertaa_id]
     @data = Pesertaa.find_by(id: session[:pesertaa_id])

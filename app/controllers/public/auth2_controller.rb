@@ -75,7 +75,7 @@ class Public::Auth2Controller < ApplicationController
                session[:pesertaa_tf]   = true
             #   #TheMailMailer.login_notification(@orang.oadm_email).deliver_later
 
-              redirect_to controller: "/public/public", action: "main"
+              redirect_to controller: "public/peserta", action: "edit"
 
             # else
             #   flash[:notif] = 'peserta ditolak'

@@ -60,7 +60,7 @@ class Sp::AuthController < ApplicationController
   end
 
   def masuk_post
-    @email = params[:oadm_email]
+    @email    = params[:oadm_email]
     @password = params[:oadm_password]
 
     @admin = Oadm.find_by(oadm_email: @email)
