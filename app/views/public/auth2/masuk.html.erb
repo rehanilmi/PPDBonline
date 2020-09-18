@@ -3,7 +3,7 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h2 class="h3 mb-3 font-weight-normal" style="text-align:center">Silahkan Masuk</h2>
+      <h2 class="h3 mb-3 font-weight-normal" style="text-align:center; font-size:25px">Silahkan Masuk</h2>
     </div>
     <br>
       <%= form_tag('/public/auth2/auth2/masuk') do %>
@@ -14,12 +14,13 @@
             <input type="text" name="pesertaa_email" class="form-control" placeholder="Email" />
             <label for="inputPassword" class="sr-only">Password</label>
             <input type="password" class="form-control" name="pesertaa_password" placeholder="Password">
-            <div class="checkbox mb-3">
+            <!-- <div class="checkbox mb-3">
               <label>
                 <input type="checkbox" value="remember-me"> Remember me
               </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </div> -->
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" style=font-size:15px>Masuk</button>
           </form>
         </div>
       </div>

@@ -1,3 +1,4 @@
+
 <%= form_for(@data, url: url_for(action: 'baru_post'), multipart: true ) do |f| %>
 
 <div class="container">
@@ -7,53 +8,55 @@
   <br>
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Nama Pengirim', { class: 'col-md-2' } %>
+        <%= f.label 'Nama Pengirim', { class: 'col-md-2', style: 'font-size:15px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesan_nama_pengirim, { class: 'form-control', placeholder: '' } %>
+            <%= f.text_field :pesan_nama_pengirim, { class: 'form-control', style: 'font-size:15px' } %>
         </div>
       </div>
     </div>
 
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Telepon Pengirim', { class: 'col-md-2' } %>
+        <%= f.label 'Telepon Pengirim', { class: 'col-md-2', style: 'font-size:15px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesan_telepon_pengirim, { class: 'form-control', placeholder: '' } %>
+            <%= f.text_field :pesan_telepon_pengirim, { class: 'form-control', style: 'font-size:15px' } %>
         </div>
       </div>
     </div>
 
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Email Pengirim', { class: 'col-md-2' } %>
+        <%= f.label 'Email Pengirim', { class: 'col-md-2', style: 'font-size:15px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesan_email_pengirim, { class: 'form-control', placeholder: '' } %>
+            <%= f.text_field :pesan_email_pengirim, { class: 'form-control', style: 'font-size:15px' } %>
         </div>
       </div>
     </div>
 
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Subjek', { class: 'col-md-2' } %>
+        <%= f.label 'Subjek', { class: 'col-md-2', style: 'font-size:15px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesan_subjek, { class: 'form-control', placeholder: '' } %>
+            <%= f.text_field :pesan_subjek, { class: 'form-control', style: 'font-size:15px' } %>
         </div>
       </div>
     </div>
 
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Pesan', { class: 'col-md-2' } %>
+        <%= f.label 'Pesan', { class: 'col-md-2', style: 'font-size:15px' } %>
         <div class="col-md-10">
-            <%= f.text_area :pesan_isi, { class: 'form-control', placeholder: '' } %>
+            <%= f.text_area :pesan_isi, { class: 'form-control', style: 'font-size:15px' } %>
         </div>
       </div>
     </div>
 
     <div class="form-group">
+      <div class="row">
         <div class="col">
-            <input type="submit" value="Masukan Pesan" class="btn btn-primary">
+            <input type="submit" value="Masukan Pesan" class="btn btn-primary" style=font-size:15px>
         </div>
+      </div>
     </div>
   </div>
 <% end %>

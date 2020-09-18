@@ -16,6 +16,6 @@ class Public::PesanController < ApplicationController
 
     })
 
-    redirect_to controller: "/public/public", action: "guru"
+    redirect_to controller: "/public/public", action: "main"
   end
 end

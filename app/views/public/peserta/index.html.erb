@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+      td {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+
+  </body>
+</html>
+
 <%= form_for(@data, url: url_for(action: 'index', pesertaaa_id: @data.id), multipart: true ) do |f| %>
 
 <div class="container">
@@ -109,9 +123,10 @@
       <td>:</td>
       <td><img src="<%= @data.pesertaa_photo %>" style="width: 100px"></td>
     </tr>
+    <tr>
+      <td>  <a href="<%= url_for action: 'edit', pesertaa_id: @data.id %>" class="btn btn-lg btn-primary btn-block" width=50px>Edit</a></td>
+    </tr>
   </table>
-  <div class="row">
-    <a href="<%= url_for action: 'edit', pesertaa_id: @data.id %>" class="btn btn-small btn-default">Edit</a>
-  </div>
 </div>
+
 <% end %>

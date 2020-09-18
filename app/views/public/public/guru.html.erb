@@ -1,19 +1,21 @@
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
+  <h2 style=text-align:center>Data Guru SPK Serasi Kota Payakumbuh</h2>
+  <br>
   <div class="jumbotron">
     <div class="container">
+
       <section id="latest-guru" class="nb-5">
       <div class="container" style=text-align:center>
+
         <div class="row">
           <% @gurus.each do |guru| %>
-          <div class="col-4">
+          <div class="col-3">
               <div>
                 <img src="<%= guru.guru_photo %>" style="width:200px">
               </div>
               <div ><h3><%= guru.guru_nama %></h3></div>
-              <div><%= guru.guru_alamat %></div>
-              <div><%= guru.guru_telepon %></div>
               <div><%= guru.guru_email %></div>
               <div><%= guru.guru_bidang_studi %></div>
               <br>
