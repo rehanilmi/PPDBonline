@@ -10,6 +10,11 @@ class Public::PesertaController < ApplicationController
       @data = Pesertaa.find_by(id: session[:pesertaa_id])
   end
 
+  def bukti
+      pesertaa_id = params[:pesertaa_id].to_i
+      @data = Pesertaa.find_by(id: session[:pesertaa_id])
+  end
+
   def edit_post
       pesertaa = params[:pesertaa]
       @data = Pesertaa.find(params[:pesertaa_id])

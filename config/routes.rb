@@ -30,6 +30,7 @@ root to: 'public#main'
       get    'index'             => 'peserta#index'
       get    'edit/:pesertaa_id'  => 'peserta#edit'
       patch  'edit/:pesertaa_id'  => 'peserta#edit_post'
+      get    'bukti/:pesertaa_id'  => 'peserta#bukti'
     end
   end
 
