@@ -1,7 +1,7 @@
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+  <div class="jumbotron-fluid">
     <div class="container">
       <section id="pengumuman" class="nb-5">
       <div class="container">
@@ -9,9 +9,9 @@
             <% @infos.each do |info| %>
           <div class="col">
             <div>
-              <img src="<%= info.info_photo %>" alt="" width=60% height=15% style="display: block; margin:auto">
+              <a href="<%= url_for action: 'view', info_id: info.id %>"><img src="<%= info.info_photo %>" alt="" width=60% height=15% style="display: block; margin:auto"></a>
             </div>
-              <a href="<%= url_for action: 'view', info_id: info.id %>"><h2 style="text-align:center; font-family:verdana; font-size:40px"><%= info.info_judul %></h2></a>
+              <h2 style="text-align:center; font-family:verdana; font-size:40px"><%= info.info_judul %></h2>
               <p style="text-align:justify; font-size:15px; text-indent:50px"><%= info.info_isi %></p>
           </div>
           <% end %>

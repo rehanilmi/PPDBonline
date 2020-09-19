@@ -1,67 +1,95 @@
 <%= form_for(@data, url: url_for(action: 'view', guru_id: @data.id), multipart: true ) do |f| %>
-<h1>Data Guru</h1>
-<div class="class-responsive">
-  <table class="table table-striped">
-    <tr>
-      <td>Nama</td>
-      <td>:</td>
-      <td><%= @data.guru_nama %></td>
-    </tr>
-    <tr>
-      <td>Tanggal Lahir</td>
-      <td>:</td>
-      <td><%= @data.guru_tgl_lahir %></td>
-    </tr>
-    <tr>
-      <td>Tempat Lahir</td>
-      <td>:</td>
-      <td><%= @data.guru_tempat_lahir %></td>
-    </tr>
-    <tr>
-      <td>Jenis Kelamin</td>
-      <td>:</td>
-      <td><%= @data.guru_jk %></td>
-    </tr>
-    <tr>
-      <td>Alamat</td>
-      <td>:</td>
-      <td><%= @data.guru_alamat %></td>
-    </tr>
-    <tr>
-      <td>Status kepegawaian</td>
-      <td>:</td>
-      <td><%= @data.guru_status_kepegawaian %></td>
-    </tr>
-    <tr>
-      <td>Telepon</td>
-      <td>:</td>
-      <td><%= @data.guru_telepon %></td>
-    </tr>
-    <tr>
-      <td>Email</td>
-      <td>:</td>
-      <td><%= @data.guru_email %></td>
-    </tr>
-    <tr>
-      <td>Agama</td>
-      <td>:</td>
-      <td><%= @data.guru_agama %></td>
-    </tr>
-    <tr>
-      <td>Status perkawinan</td>
-      <td>:</td>
-      <td><%= @data.guru_status_perkawinan %></td>
-    </tr>
-    <tr>
-      <td>Bidang studi</td>
-      <td>:</td>
-      <td><%= @data.guru_bidang_studi %></td>
-    </tr>
-    <tr>
-      <td>Photo</td>
-      <td>:</td>
-      <td><img src="<%= @data.guru_photo %>" alt="" style="width: 100px"></td>
-    </tr>
-  </table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+      tr, td {
+        font-size: 15px;
+        width: 150px;
+        padding: 10px;
+        border-spacing: 5px;
+      }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
+
+<div class="container">
+  <h1>Data Guru</h1>
+  <div class="class-responsive">
+    <table class="table table-dark table-hover" border=0px>
+      <tr>
+        <td>Nama</td>
+
+        <td><%= @data.guru_nama %></td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir</td>
+
+        <td><%= @data.guru_tgl_lahir %></td>
+      </tr>
+      <tr>
+        <td>Tempat Lahir</td>
+
+        <td><%= @data.guru_tempat_lahir %></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+
+        <td><%= @data.guru_jk %></td>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+
+        <td><%= @data.guru_alamat %></td>
+      </tr>
+      <!-- <tr>
+        <td>Status kepegawaian</td>
+
+        <td><%= @data.guru_status_kepegawaian %></td>
+      </tr> -->
+      <tr>
+        <td>Telepon</td>
+
+        <td><%= @data.guru_telepon %></td>
+      </tr>
+      <tr>
+        <td>Nip</td>
+
+        <td><%= @data.guru_nip %></td>
+      </tr>
+      <tr>
+        <td>Golongan</td>
+
+        <td><%= @data.guru_golongan %></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+
+        <td><%= @data.guru_email %></td>
+      </tr>
+      <tr>
+        <td>Agama</td>
+
+        <td><%= @data.guru_agama %></td>
+      </tr>
+      <tr>
+        <td>Status perkawinan</td>
+
+        <td><%= @data.guru_status_perkawinan %></td>
+      </tr>
+      <tr>
+        <td>Bidang studi</td>
+
+        <td><%= @data.guru_bidang_studi %></td>
+      </tr>
+      <tr>
+        <td>Photo</td>
+
+        <td><img src="<%= @data.guru_photo %>" alt="" style="width: 100px"></td>
+      </tr>
+    </table>
+  </div>
 </div>
 <% end %>

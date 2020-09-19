@@ -25,6 +25,8 @@ class Sp::StafController < ApplicationController
         staf_status_kepegawaian: staf[:staf_status_kepegawaian],
         staf_telepon: staf[:staf_telepon],
         staf_alamat: staf[:staf_alamat],
+        staf_nip: staf[:staf_nip],
+        staf_golongan: staf[:staf_golongan],
         staf_email: staf[:staf_email],
         staf_pendidikan_terakhir: staf[:staf_pendidikan_terakhir],
         staf_agama: staf[:staf_agama],

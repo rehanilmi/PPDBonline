@@ -1,30 +1,47 @@
-<main role="main">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0;
+  transition: 0.3s;
+  width: 20%;
+}
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <h2 style=text-align:center>Data Staf SPK Serasi Kota Payakumbuh</h2>
-  <br>
-  <div class="jumbotron">
-    <div class="container">
-      <section id="staff" class="nb-5">
-      <div class="container" style=text-align:center>
-        <div class="row">
-          <% @stafs.each do |staf| %>
-          <div class="col-3">
-              <div>
-                <img src="<%= staf.staf_photo %>" style="width: 200px">
+/* .card:hover {
+  box-shadow: 0;
+} */
+
+/* .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+} */
+
+</style>
+</head>
+<body>
+  <main role="main">
+    <h2 style=text-align:center>Data Guru SPK Serasi Kota Payakumbuh</h2>
+      <div class="jumbotron" style="padding:0px">
+        <section class="our-teachers">
+          <div class="container" style="text-align:center">
+            <div class="row justify-content-center">
+              <% @stafs.each do |staf| %>
+                <div class="card">
+                  <br>
+                    <a href="<%= url_for action: 'view', staf_id: staf.id %>"><img src="<%= staf.staf_photo %>" style="width:115px; height:150px"></a><hr>
+                      <div class="text-center mt-3"><h4><%= staf.staf_nama %></h4></div>
+                      <div><%= staf.staf_nip %></div>
+                      <div><%= staf.staf_golongan %></div>
+                  </div>
+                  <br>
+                <% end %>
               </div>
-
-              <a href="<%= url_for action: 'view', staf_id: staf.id %>"><div><%= staf.staf_nama %></div></a>
-              <div><%= staf.staf_email %></div>
-          </div>
-          <% end %>
-        </div>
+            </div>
+          </section>
+        <hr>
       </div>
-      </section>
-      <!-- <h1 class="display-3">Hello, world!</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
-    </div>
-  </div>
-
-</main>
+  </main>
+</body>
+</html>

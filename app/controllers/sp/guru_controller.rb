@@ -24,6 +24,8 @@ class Sp::GuruController < ApplicationController
         guru_status_kepegawaian: guru[:guru_status_kepegawaian],
         guru_telepon: guru[:guru_telepon],
         guru_alamat: guru[:guru_alamat],
+        guru_nip: guru[:guru_nip],
+        guru_golongan: guru[:guru_golongan],
         guru_email: guru[:guru_email],
         guru_bidang_studi: guru[:guru_bidang_studi],
         guru_pendidikan_terakhir: guru[:guru_pendidikan_terakhir],
@@ -52,6 +54,8 @@ class Sp::GuruController < ApplicationController
        @data.guru_alamat = guru[:guru_alamat]
        @data.guru_status_kepegawaian = guru[:guru_status_kepegawaian]
        @data.guru_telepon = guru[:guru_telepon]
+       @data.guru_nip = guru[:guru_nip]
+       @data.guru_golongan = guru[:guru_golongan]
        @data.guru_email = guru[:guru_email]
        @data.guru_bidang_studi = guru[:guru_bidang_studi]
        @data.guru_pendidikan_terakhir = guru[:guru_pendidikan_terakhir]

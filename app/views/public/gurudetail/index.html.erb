@@ -4,43 +4,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .card {
-  box-shadow: 0 4px 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0;
   transition: 0.3s;
-  width: 30%;
+  width: 20%;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+/* .card:hover {
+  box-shadow: 0;
+} */
 
-.container {
-  padding: 2px 20px;
-}
+/* .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+} */
+
 </style>
 </head>
 <body>
   <main role="main">
-
-<h2 style=text-align:center>Data Guru SPK Serasi Kota Payakumbuh</h2>
-<br><br>
-<div class="jumbotron">
-<section class="our-teachers">
-<div class="container" style=text-align:center>
-<div class="row" style="padding:2% 3%; ">
-  <% @gurus.each do |guru| %>
-            <div class="card">
-              <a href="<%= url_for action: 'view', guru_id: guru.id %>"><img src="<%= guru.guru_photo %>" style="width:180px; height:220px"></a><hr>
-              <div class="text-center mt-3"><h4><%= guru.guru_nama %></h4></div>
-              <!-- <div><%= guru.guru_email %></div> -->
-              <div><%= guru.guru_bidang_studi %></div>
-              <br>
+    <h2 style=text-align:center>Data Guru SPK Serasi Kota Payakumbuh</h2>
+    <div class="jumbotron" style="padding:0px">
+      <section class="our-teachers">
+        <div class="container" style="text-align:center">
+          <div class="row justify-content-center">
+            <% @gurus.each do |guru| %>
+              <div class="card">
+                <br>
+                  <a href="<%= url_for action: 'view', guru_id: guru.id %>"><img src="<%= guru.guru_photo %>" style="width:115px; height:150px"></a><hr>
+                    <div class="text-center mt-3"><h4><%= guru.guru_nama %></h4></div>
+                    <div><%= guru.guru_nip %></div>
+                    <div><%= guru.guru_golongan %></div>
+                </div>
+                <br>
+              <% end %>
           </div>
-          <% end %>
-</div><br><br><br><br><br>
-</div>
-</section>
-  <hr>
-</div>
-</main>
+          </div>
+      </section>
+      <hr>
+    </div>
+  </main>
 </body>
 </html>
