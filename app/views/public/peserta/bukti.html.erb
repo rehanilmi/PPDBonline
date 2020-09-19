@@ -62,6 +62,7 @@
 		<br>
 		<br>
 		<%= form_for(@data, url: url_for(action: 'bukti', pesertaaa_id: @data.id), multipart: true ) do |f| %>
+		<% @status = Pesertaa.where(id: session[:pesertaa_id]).first %>
 		<div class="row justify-content-center">
 
 				<table border=0>
@@ -71,9 +72,19 @@
 					<tr>
 						<td><%= @data.pesertaa_kategori%></td>
 					</tr>
+			<% if @status.pesertaa_jenjang_pendidikan == 'SMA' %>
 					<tr>
 						<td>010203<%= @data.id %></td>
 					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMP' %>
+					<tr>
+						<td>00000<%= @data.id %></td>
+					</tr>
+				<% else %>
+				<tr>
+					<td>170109<%= @data.id %></td>
+				</tr>
+			<% end %>
 				</table>
 		</div>
 			<br>
@@ -90,7 +101,7 @@
 			<br>
 			<div class="row">
 				<div class="col">
-					<h5 style=text-align:right>Tanggal Disini</h5>
+					<h5 style=text-align:right><%= @data.updated_at%></h5>
 				</div>
 
 			</div>

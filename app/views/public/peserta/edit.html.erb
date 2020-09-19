@@ -152,7 +152,7 @@
       <div class="row">
         <%= f.label 'Jenjang Pendidikan', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_jenjang_pendidikan, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.select(:pesertaa_jenjang_pendidikan, ['SMA', 'SMP', 'SD'], {}, { class: 'form-control', style: 'font-size:13px' } )%>
         </div>
       </div>
     </div>
