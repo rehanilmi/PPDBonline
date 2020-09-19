@@ -1,40 +1,46 @@
-<main role="main">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 1px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+}
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <h2 style=text-align:center>Data Guru SPK Serasi Kota Payakumbuh</h2>
-  <br>
-  <div class="jumbotron">
-    <div class="container">
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
-      <section id="latest-guru" class="nb-5">
-      <div class="container" style=text-align:center>
+.container {
+  padding: 2px 20px;
+}
+</style>
+</head>
+<body>
+  <main role="main">
 
-        <div class="row">
-          <% @gurus.each do |guru| %>
-          <div class="col-3">
-              <div>
-                <img src="<%= guru.guru_photo %>" style="width:200px">
-              </div>
-              <a href="<%= url_for action: 'view', guru_id: guru.id %>"><div ><h3><%= guru.guru_nama %></h3></div></a>
-              <div><%= guru.guru_email %></div>
+<h2 style=text-align:center>Data Guru SPK Serasi Kota Payakumbuh</h2>
+<br><br>
+<div class="jumbotron">
+<section class="our-teachers">
+<div class="container" style=text-align:center>
+<div class="row" style="padding:2% 3%; ">
+  <% @gurus.each do |guru| %>
+            <div class="card">
+              <a href="<%= url_for action: 'view', guru_id: guru.id %>"><img src="<%= guru.guru_photo %>" style="width:180px; height:220px"></a><hr>
+              <div class="text-center mt-3"><h4><%= guru.guru_nama %></h4></div>
+              <!-- <div><%= guru.guru_email %></div> -->
               <div><%= guru.guru_bidang_studi %></div>
               <br>
           </div>
           <% end %>
-        </div>
-      </div>
-      </section>
-      <!-- <h1 class="display-3">Hello, world!</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
-    </div>
-  </div>
-
-
-
-
-
-
-    <hr>
-
+</div><br><br><br><br><br>
+</div>
+</section>
+  <hr>
+</div>
 </main>
+</body>
+</html>

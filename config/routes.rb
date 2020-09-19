@@ -22,8 +22,6 @@ root to: 'public#main'
       get 'public/pengumuman'=> 'public#pengumuman'
       get 'public/vdm'       => 'public#vdm'
       get 'public/test'      => 'public#test'
-      get 'baru'             => 'public#baru'
-      post'baru'             => 'public#baru_post'
       end
     end
 
@@ -43,11 +41,6 @@ root to: 'public#main'
     end
   end
 
-  # resource :pengumuman_detail do
-  #   collection do
-  #     get    'view'            => 'pengumuman_detail#view'
-  #   end
-  # end
 
   resource :infodetail do
     collection do

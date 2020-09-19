@@ -1,2 +1,0 @@
-class PengumumanDetailController < ApplicationController
-end
