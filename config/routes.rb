@@ -10,7 +10,7 @@ root to: 'public#main'
         post  'auth2/daftar'     => 'auth2#daftar_post'
         get   'auth2/masuk'
         post  'auth2/masuk'      => 'auth2#masuk_post'
-        get  'auth2/signout'
+        get   'auth2/signout'
 
       end
     end
@@ -22,15 +22,17 @@ root to: 'public#main'
       get 'public/pengumuman'=> 'public#pengumuman'
       get 'public/vdm'       => 'public#vdm'
       get 'public/test'      => 'public#test'
+      get 'baru'             => 'public#baru'
+      post'baru'             => 'public#baru_post'
       end
     end
 
   resource :peserta do
     collection do
-      get    'index'             => 'peserta#index'
+      get    'index'              => 'peserta#index'
       get    'edit/:pesertaa_id'  => 'peserta#edit'
       patch  'edit/:pesertaa_id'  => 'peserta#edit_post'
-      get    'bukti/:pesertaa_id'  => 'peserta#bukti'
+      get    'bukti/:pesertaa_id' => 'peserta#bukti'
     end
   end
 
@@ -38,6 +40,33 @@ root to: 'public#main'
     collection do
       get    'baru'            => 'pesan#baru'
       post   'baru'            => 'pesan#baru_post'
+    end
+  end
+
+  # resource :pengumuman_detail do
+  #   collection do
+  #     get    'view'            => 'pengumuman_detail#view'
+  #   end
+  # end
+
+  resource :infodetail do
+    collection do
+      get    'index'           => 'infodetail#index'
+      get    'view'            => 'infodetail#view'
+    end
+  end
+
+  resource :gurudetail do
+    collection do
+      get    'index'           => 'gurudetail#index'
+      get    'view'            => 'gurudetail#view'
+    end
+  end
+
+  resource :stafdetail do
+    collection do
+      get    'index'           => 'stafdetail#index'
+      get    'view'            => 'stafdetail#view'
     end
   end
 
@@ -113,14 +142,14 @@ end
 
     resource :peserta do
       collection do
-        get    '/'                 => 'peserta#index'
-        get    'baru'              => 'peserta#baru'
-        post   'baru'              => 'peserta#baru_post'
+        get    '/'                  => 'peserta#index'
+        get    'baru'               => 'peserta#baru'
+        post   'baru'               => 'peserta#baru_post'
         get    'edit/:pesertaa_id'  => 'peserta#edit'
         patch  'edit/:pesertaa_id'  => 'peserta#edit_post'
         get    'hapus/:pesertaa_id' => 'peserta#hapus'
         delete 'hapus/:pesertaa_id' => 'peserta#hapus'
-        get    'view'              => 'peserta#view'
+        get    'view'               => 'peserta#view'
       end
     end
 

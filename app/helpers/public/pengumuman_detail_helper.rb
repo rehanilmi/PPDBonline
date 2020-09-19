@@ -1,0 +1,2 @@
+module Public::PengumumanDetailHelper
+end

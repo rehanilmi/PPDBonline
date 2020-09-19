@@ -3,7 +3,18 @@
 <head>
 	<title>Bukti Pendaftaran</title>
       <style>
-            .tabel_laporan {
+				h4 {
+					font-size: 20px;
+					text-align: center;
+				}
+
+				td {
+					font-size: 15px;
+					text-align: center;
+					font-weight: bold;
+				}
+
+            /* .tabel_laporan {
                   border: 1px solid black;
                   margin: 0 auto;
                   border-collapse: collapse;
@@ -16,49 +27,78 @@
             }
             .tabel_laporan th {
                   background-color: #E0E0E0;
-            }
+            } */
       </style>
 </head>
-</br>
-</br>
-<table align="center">
-      <tr>
-        <td><img src="/theme/images/logo.png" width="65"  height="75"></td>
-        <td align="center"><span style="font-size:16px">Bukti Pendaftaran</span></br>
-        <span style="font-size:22px; font-weight: bold">Penerimaan Peserta Didik Baru</span></br>
-        <span style="font-size:22px; font-weight: bold">SPK Serasi Kota Payakumbuh</span></br>
-      </tr>
-      <tr>
-            <td style="border-bottom: 3px solid black;" colspan="3"></td>
-      </tr>
 
-    </table>
-</br>
-</br>
-<%= form_for(@data, url: url_for(action: 'bukti', pesertaaa_id: @data.id), multipart: true ) do |f| %>
-<body>
-      <h2 align="center"><b></b></h2>
-      <table class="tabel_laporan">
-      	<tr>
-      		<th>Nama</th>
-      		<th>Jenjang Pendidikan</th>
-      		<th>Nomor Pendaftaran</th>
-      	  </tr>
-          <tr>
-            <td><%= @data.pesertaa_nama %></td>
-            <td><%= @data.pesertaa_jenjang_pendidikan %></td>
-            <td><%= @data.id %></td>
-          </tr>
-      </table>
-    </br></br>
-    <table align="center">
-      <tr>
-        <td>
-          <img src="<%= @data.pesertaa_photo %>" style="width: 100px">
-        </td>
-      </tr>
-    </table>
-</body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<img src="/theme/images/logo.png" width="50"  height="65" style="display: block; margin: auto">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col">
+					<h4><b>Yayasan Peduli Anak Nagari</b></h4>
+					<h4><b>Sekolah Pendidikan Khusus (SPK) Serasi Kota Payakumbuh</b></h4>
+			</div>
+		</div>
+		<br>
+		<div class="row" style="border-bottom: 3px solid black;">
+			<div class="col" >
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col">
+				<h4>Bukti Pendaftaran </h4>
+				<h4>Penerimaan Peserta Didik Baru(PPDB) Online</h4>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<%= form_for(@data, url: url_for(action: 'bukti', pesertaaa_id: @data.id), multipart: true ) do |f| %>
+		<div class="row justify-content-center">
+
+				<table border=0>
+					<tr>
+						<td><%= @data.pesertaa_nama %></td>
+					</tr>
+					<tr>
+						<td><%= @data.pesertaa_kategori%></td>
+					</tr>
+					<tr>
+						<td>010203<%= @data.id %></td>
+					</tr>
+				</table>
+		</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col">
+					<img src="<%= @data.pesertaa_photo %>" style="display: block; margin: auto" width=100px height=100px>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col">
+					<h5 style=text-align:right>Tanggal Disini</h5>
+				</div>
+
+			</div>
+	</div>
+
+
+
+
 </html>
 
 <% end %>

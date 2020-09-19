@@ -3,12 +3,23 @@
 
 <div class="container">
   <div class="row">
-      <h2>Silahkan Masukan Pesan</h2>
+    <div class="col text-center">
+      <h2>Hubungi kami</h2>
+    </div>
   </div>
+    <div class="row">
+      <div class="col text-center">
+        <h5 class="section-subheading text-muted">
+          Silahkan tanya apa saja kepada kami<br>
+        </h5>
+      </div>
+    </div>
+
+
   <br>
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Nama Pengirim', { class: 'col-md-2', style: 'font-size:15px' } %>
+        <%= f.label 'Nama Pengirim', { class: 'col-md-2', style: 'font-size:15px'} %>
         <div class="col-md-10">
             <%= f.text_field :pesan_nama_pengirim, { class: 'form-control', style: 'font-size:15px' } %>
         </div>

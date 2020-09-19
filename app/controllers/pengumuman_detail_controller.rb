@@ -1,0 +1,2 @@
+class PengumumanDetailController < ApplicationController
+end
