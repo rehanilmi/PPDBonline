@@ -1,18 +1,37 @@
 <main role="main">
+  <section class="">
+      <div class="container">
+        <% @infos.each do |info| %>
+          <div class="row" style=padding:10px>
+              <div class="col-md-8">
+                 <h2 style="font-family:verdana; font-size:30px"><%= info.info_judul %></h2>
+                 <br>
+                 <p style="text-align:justify; font-size:15px; text-indent:50px"><%= truncate(info.info_isi, :length => 200) %><a href="<%= url_for action: 'view', info_id: info.id %>">Baca Selengkapnya</a></p>
+
+              </div>
+              <div class="col-md-4">
+                  <img src="<%= info.info_photo %>" class="img-fluid about-img" alt="#">
+              </div>
+          </div>
+          <% end %>
+          <br>
+      </div>
+  </section>
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron-fluid">
+  <!-- <div class="jumbotron-fluid">
     <div class="container">
       <section id="pengumuman" class="nb-5">
       <div class="container">
         <div class="row">
             <% @infos.each do |info| %>
           <div class="col">
-            <div>
-              <a href="<%= url_for action: 'view', info_id: info.id %>"><img src="<%= info.info_photo %>" alt="" width=60% height=15% style="display: block; margin:auto"></a>
-            </div>
-              <h2 style="text-align:center; font-family:verdana; font-size:40px"><%= info.info_judul %></h2>
-              <p style="text-align:justify; font-size:15px; text-indent:50px"><%= info.info_isi %></p>
+            <h2 style="text-align:center; font-family:verdana; font-size:40px"><%= info.info_judul %></h2>
+            <p style="text-align:justify; font-size:15px; text-indent:50px"><%= info.info_isi %>
+            </p>
+          </div>
+          <div class="col">
+            <a href="<%= url_for action: 'view', info_id: info.id %>"><img src="<%= info.info_photo %>" class="float-right" alt="" width=50% style="display: block; margin:auto"></a>
           </div>
           <% end %>
         </div>
@@ -22,10 +41,8 @@
       <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
     </div>
-  </div>
+  </div> -->
 
 </main>
     <!--//END HEADER -->
     <!--============================= ABOUT =============================-->
-    <section class="clearfix about about-style2">
-        <div class="container">
