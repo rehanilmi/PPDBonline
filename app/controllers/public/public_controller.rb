@@ -19,4 +19,10 @@ class Public::PublicController < ApplicationController
   def test
   end
 
+  def strukturorg
+  end
+
+  def fasilitas
+  end 
+
 end

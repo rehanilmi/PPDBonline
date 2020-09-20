@@ -318,7 +318,7 @@
 
                                 <div class="d-sm-none d-lg-inline-block"><%= @profil.oadm_nama %></div></a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="profile.html" class="dropdown-item has-icon">
+                                    <!-- <a href="profile.html" class="dropdown-item has-icon">
                                         <i class="ion ion-android-person"></i> Profile
                                     </a>
                                     <a href="profile.html" class="dropdown-item has-icon">
@@ -326,8 +326,8 @@
                                     </a>
                                     <a href="profile.html" class="dropdown-item has-icon">
                                         <i class="ion ion-gear-a"></i> Settings
-                                    </a>
-
+                                    </a> -->
+                                    <a href="<%= url_for(controller: '/sp/auth', action: 'signout') %>" class="dropdown-item has-icon">
                                         <i class="ion-ios-redo"></i> Logout
                                     </a>
                                 </div>
@@ -344,7 +344,7 @@
                                 <a class="nav-link pl-2 pr-2 leading-none d-flex" data-toggle="dropdown" href="#">
 
                                     <span class="ml-2 d-lg-block">
-                                        <span class="text-white app-sidebar__user-name mt-5"><%= @profil.oadm_email %></span><br>
+                                        <span class="text-white app-sidebar__user-name mt-5"><%= @profil.oadm_nama %></span><br>
                                         <span class="text-muted app-sidebar__user-name text-sm"></span>
                                     </span>
                                 </a>

@@ -17,11 +17,13 @@ root to: 'public#main'
 
   resource :public do
     collection do
-      get 'public/guru'      => 'public#guru'
-      get 'public/staff'     => 'public#staff'
-      get 'public/pengumuman'=> 'public#pengumuman'
-      get 'public/vdm'       => 'public#vdm'
-      get 'public/test'      => 'public#test'
+      get 'public/guru'           => 'public#guru'
+      get 'public/staff'          => 'public#staff'
+      get 'public/pengumuman'     => 'public#pengumuman'
+      get 'public/vdm'            => 'public#vdm'
+      get 'public/test'           => 'public#test'
+      get 'public/strukturorg'    => 'public#strukturorg'
+      get 'public/fasilitas'      => 'public#fasilitas'
       end
     end
 

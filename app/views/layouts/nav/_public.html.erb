@@ -7,10 +7,10 @@
                         <span class="icon-phone"></span> 082288290010
                     </div>
                     <div class="header-top_list">
-                        <span class="icon-envelope-open"></span>hexaaristia3@gmail.com.com
+                        <span class="icon-envelope-open"></span>slb_serasi@yahoo.co.id
                     </div>
                     <div class="header-top_list">
-                        <span class="icon-location-pin"></span>Padang, Sumatera Barat, INA. 11001
+                        <span class="icon-location-pin"></span>Payakumbuh, Sumatera Barat, INA. 26219
                     </div>
                 </div>
                 <!-- <div class="header-top_login2">
@@ -42,6 +42,24 @@
                             <!-- <li class="nav-item">
                                 <a class="nav-link" href="">About</a>
                             </li> -->
+
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg">
+
+                                <div class="d-sm-none d-lg-inline-block"><b>Profil</b></div></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="/public/public/public/vdm" class="dropdown-item has-icon">
+                                        <i class="ion ion-android-person"></i><b>Visi dan Misi</b>
+                                    </a>
+                                    <a href="/public/public/public/strukturorg" class="dropdown-item has-icon">
+                                        <i class="ion-android-drafts"></i><b>Struktur Organisasi</b>
+                                    </a>
+                                    <a  class="dropdown-item has-icon" href="/public/public/public/fasilitas">
+                                        <i class="ion ion-gear-a"></i><b>Fasilitas Sekolah</b>
+                                    </a>
+                              </div>
+                          </li>
+
+
                             <li class="nav-item">
                                 <a class="nav-link" href="/public/gurudetail/index"><b>Guru</b></a>
                             </li>
@@ -91,10 +109,9 @@
                                       <a  class="dropdown-item has-icon" href="<%= url_for(controller: '/public/auth2', action: 'signout') %>">
                                           <i class="ion ion-gear-a"></i><b>Logout</b>
                                       </a>
-                              </div>
-
-                          </li>
-                          <% end %>
+                                </div>
+                            </li>
+                        <% end %>
                       </ul>
                     </div>
                 </nav>
