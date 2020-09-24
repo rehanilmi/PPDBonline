@@ -44,7 +44,7 @@
       <div class="row">
         <%= f.label 'Jenis Kelamin', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.select(:pesertaa_jk, ['Laki-laki', 'Perempuan'], {}, { class: 'form-control', style: 'font-size:13px' } )%>
+            <%= f.select(:pesertaa_jk, ['Laki-laki', 'Perempuan'], {}, { class: 'form-control-lg', style: 'font-size:13px' } )%>
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@
 
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Tinggi Badan', { class: 'col-md-2' } %>
+        <%= f.label 'Tinggi Badan', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
             <%= f.text_field :pesertaa_tinggi, { class: 'form-control', style: 'font-size:13px' } %>
         </div>
@@ -141,9 +141,9 @@
 
     <div class="form-group">
       <div class="row">
-        <%= f.label 'Kebutuhan Khusus', { class: 'col-md-2', style: 'font-size:13px' } %>
-        <div class="col-md-10">
-            <%= f.text_field :pesertaa_kategori, { class: 'form-control', style: 'font-size:13px' } %>
+        <%= f.label 'Kategori Disabilitas', { class: 'col-md-2', style: 'font-size:13px' } %>
+        <div class="col-md-8">
+            <%= f.select(:pesertaa_kategori, ['Disabilitas Fisik', 'Disabilitas Intelektual', 'Disabilitas Mental', 'Disabilitas Sensori'], {}, { class: 'form-control-lg', placeholder: '' } )%>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
       <div class="row">
         <%= f.label 'Jenjang Pendidikan', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.select(:pesertaa_jenjang_pendidikan, ['SMA', 'SMP', 'SD'], {}, { class: 'form-control', style: 'font-size:13px' } )%>
+            <%= f.select(:pesertaa_jenjang_pendidikan, ['SMA', 'SMP', 'SD'], {}, { class: 'form-control-lg', style: 'font-size:13px' } )%>
         </div>
       </div>
     </div>

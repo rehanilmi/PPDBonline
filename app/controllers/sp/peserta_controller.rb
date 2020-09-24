@@ -29,6 +29,7 @@ class Sp::PesertaController < ApplicationController
         pesertaa_nama_ibu: pesertaa[:pesertaa_nama_ibu],
         pesertaa_tinggi: pesertaa[:pesertaa_tinggi],
         pesertaa_bb: pesertaa[:pesertaa_bb],
+        pesertaa_email: pesertaa[:pesertaa_email],
         pesertaa_photo: pesertaa[:pesertaa_photo],
         pesertaa_gol_darah: pesertaa[:pesertaa_gol_darah],
         pesertaa_jarak_sekolah: pesertaa[:pesertaa_jarak_sekolah],

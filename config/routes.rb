@@ -24,6 +24,7 @@ root to: 'public#main'
       get 'public/test'           => 'public#test'
       get 'public/strukturorg'    => 'public#strukturorg'
       get 'public/fasilitas'      => 'public#fasilitas'
+      get 'public/tatatertib'     => 'public#tatatertib'
       end
     end
 

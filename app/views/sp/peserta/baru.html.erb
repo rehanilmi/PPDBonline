@@ -47,6 +47,15 @@
 
 <div class="form-group">
   <div class="row">
+    <%= f.label 'Email', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :pesertaa_email, { class: 'form-control', placeholder: '' } %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
     <%= f.label 'Alamat Lengkap', { class: 'col-md-2' } %>
     <div class="col-md-8">
         <%= f.text_area :pesertaa_alamat, { class: 'form-control', placeholder: '' } %>

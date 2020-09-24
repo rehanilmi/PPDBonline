@@ -23,6 +23,9 @@ class Public::PublicController < ApplicationController
   end
 
   def fasilitas
+  end
+
+  def tatatertib
   end 
 
 end
