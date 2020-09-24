@@ -40,7 +40,7 @@
   <div class="row">
     <%= f.label 'Jenis Kelamin', { class: 'col-md-2' } %>
     <div class="col-md-8">
-        <%= f.select(:pesertaa_jk, ['Laki-laki', 'Perempuan'], {}, { class: 'form-control', placeholder: '' } )%>
+        <%= f.select(:pesertaa_jk, ['Laki-laki', 'Perempuan'], {}, { class: 'form-control-lg', placeholder: '' } )%>
     </div>
   </div>
 </div>
@@ -137,9 +137,9 @@
 
 <div class="form-group">
   <div class="row">
-    <%= f.label 'Kebutuhan Khusus', { class: 'col-md-2' } %>
+    <%= f.label 'Kategori Disabilitas', { class: 'col-md-2' } %>
     <div class="col-md-8">
-        <%= f.text_field :pesertaa_kategori, { class: 'form-control', placeholder: '' } %>
+        <%= f.select(:pesertaa_kategori, ['Disabilitas Fisik', 'Disabilitas Intelektual', 'Disabilitas Mental', 'Disabilitas Sensori'], {}, { class: 'form-control-lg', placeholder: '' } )%>
     </div>
   </div>
 </div>
@@ -148,7 +148,7 @@
   <div class="row">
     <%= f.label 'Jenjang Pendidikan', { class: 'col-md-2' } %>
     <div class="col-md-8">
-        <%= f.select(:pesertaa_jenjang_pendidikan, ['SD', 'SMP', 'SMA'], {}, { class: 'form-control', placeholder: '' } )%>
+        <%= f.select(:pesertaa_jenjang_pendidikan, ['SD', 'SMP', 'SMA'], {}, { class: 'form-control-lg', placeholder: '' } )%>
     </div>
   </div>
 </div>

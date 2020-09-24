@@ -1,25 +1,47 @@
 <%= form_for(@data, url: url_for(action: 'baru_post'), multipart: true ) do |f| %>
+
 <div class="form-group">
-  <label for="">Judul</label>
-  <%= f.text_field :info_judul, {class: 'form-control'} %>
+  <div class="row">
+    <%= f.label 'Judul', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :info_judul, {class: 'form-control'} %>
+    </div>
+  </div>
 </div>
 
 <div class="form-group">
-  <label for="">Penulis</label>
-  <%= f.text_field :info_created_by, {class: 'form-control'} %>
+  <div class="row">
+    <%= f.label 'Penulis', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :info_created_by, {class: 'form-control'} %>
+    </div>
+  </div>
 </div>
 
 <div class="form-group">
-  <label for="">Isi</label>
-  <%= f.text_area :info_isi, {class: 'form-control'} %>
+  <div class="row">
+    <%= f.label 'Isi', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_area :info_isi, {class: 'form-control'} %>
+    </div>
+  </div>
 </div>
 
 <div class="form-group">
-  <label for="">Photo</label>
-  <%= f.file_field :info_photo, {class: 'form-control'} %>
+  <div class="row">
+    <%= f.label 'Photo', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.file_field :info_photo, {class: 'form-control'} %>
+    </div>
+  </div>
 </div>
 
 <div class="form-group">
-  <input type="submit" value="Masukan" class="btn btn-primary">
+  <div class="row">
+    <div class="col-md-8">
+        <input type="submit" value="Masukan" class="btn btn-primary">
+    </div>
+  </div>
 </div>
+
 <% end %>

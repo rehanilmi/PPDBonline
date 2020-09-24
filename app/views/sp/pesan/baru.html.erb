@@ -1,26 +1,56 @@
 <%= form_for(@data, url: url_for(action: 'baru_post'), multipart: true ) do |f| %>
+
 <div class="form-group">
-  <label for="">Nama Pengirim</label>
-  <%= f.text_field :pesan_nama_pengirim, {class: 'form-control'} %>
-</div>
-<div class="form-group">
-  <label for="">Telepon Pengirim</label>
-  <%= f.text_field :pesan_telepon_pengirim, {class: 'form-control'} %>
-</div>
-<div class="form-group">
-  <label for="">Email Pengirim</label>
-  <%= f.text_field :pesan_email_pengirim, {class: 'form-control'} %>
-</div>
-<div class="form-group">
-  <label for="">Subjek</label>
-  <%= f.text_field :pesan_subjek, {class: 'form-control'} %>
-</div>
-<div class="form-group">
-  <label for="">Pesan/Pertanyaan</label>
-  <%= f.text_area :pesan_isi, {class: 'form-control'} %>
+  <div class="row">
+    <%= f.label 'Nama Pengirim', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :pesan_nama_pengirim, {class: 'form-control'} %>
+    </div>
+  </div>
 </div>
 
 <div class="form-group">
-  <input type="submit" value="Masukan Pesan" class="btn btn-primary">
+  <div class="row">
+    <%= f.label 'Telepon Pengirim', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :pesan_telepon_pengirim, {class: 'form-control'} %>
+    </div>
+  </div>
 </div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.label 'Email Pengirim', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :pesan_email_pengirim, {class: 'form-control'} %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.label 'Subjek', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_field :pesan_subjek, {class: 'form-control'} %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.label 'Isi', { class: 'col-md-2' } %>
+    <div class="col-md-8">
+        <%= f.text_area :pesan_isi, {class: 'form-control'} %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <div class="col-md-8">
+        <input type="submit" value="Masukan Pesan" class="btn btn-primary">
+    </div>
+  </div>
+</div>
+
 <% end %>
