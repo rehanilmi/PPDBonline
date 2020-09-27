@@ -86,13 +86,6 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                       <ul class="navbar-nav">
 
-                          <li class="nav-item">
-                              <a class="nav-link" href="/public/auth2/auth2/masuk"><b>Masuk</b></a>
-                          </li>
-
-                          <li class="nav-item">
-                              <a class="nav-link" href="/public/auth2/auth2/daftar"><b>Daftar</b></a>
-                          </li>
 
                           <% @profil = Pesertaa.where(id: session[:pesertaa_id]).first %>
                           <% if @profil %>
@@ -110,6 +103,14 @@
                                           <i class="ion ion-gear-a"></i><b>Logout</b>
                                       </a>
                                 </div>
+                            </li>
+                            <% else %>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/public/auth2/auth2/masuk"><b>Masuk</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link" href="/public/auth2/auth2/daftar"><b>Daftar</b></a>
                             </li>
                         <% end %>
                       </ul>
