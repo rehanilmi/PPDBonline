@@ -72,18 +72,54 @@
 					<tr>
 						<td><%= @data.pesertaa_kategori%></td>
 					</tr>
-			<% if @status.pesertaa_jenjang_pendidikan == 'SMA' %>
+			<% if @status.pesertaa_jenjang_pendidikan == 'SMA' && @status.pesertaa_kategori == 'Disabilitas Fisik'%>
 					<tr>
-						<td>010203<%= @data.id %></td>
+						<td>0101<%= @data.id %></td>
 					</tr>
-			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMP' %>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMA' && @status.pesertaa_kategori == 'Disabilitas Intelektual' %>
 					<tr>
-						<td>00000<%= @data.id %></td>
+						<td>0102<%= @data.id %></td>
 					</tr>
-				<% else %>
-				<tr>
-					<td>170109<%= @data.id %></td>
-				</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMA' && @status.pesertaa_kategori == 'Disabilitas Mental' %>
+					<tr>
+						<td>0103<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMA' && @status.pesertaa_kategori == 'Disabilitas Sensori' %>
+					<tr>
+						<td>0104<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMP' && @status.pesertaa_kategori == 'Disabilitas Fisik' %>
+					<tr>
+						<td>0201<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMP' && @status.pesertaa_kategori == 'Disabilitas Intelektual' %>
+					<tr>
+						<td>0202<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMP' && @status.pesertaa_kategori == 'Disabilitas Mental' %>
+					<tr>
+						<td>0203<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SMP' && @status.pesertaa_kategori == 'Disabilitas Sensori' %>
+					<tr>
+						<td>0204<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SD' && @status.pesertaa_kategori == 'Disabilitas Fisik' %>
+					<tr>
+						<td>0301<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SD' && @status.pesertaa_kategori == 'Disabilitas Intelektual' %>
+					<tr>
+						<td>0302<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SD' && @status.pesertaa_kategori == 'Disabilitas Mental' %>
+					<tr>
+						<td>0303<%= @data.id %></td>
+					</tr>
+			<% elsif @status.pesertaa_jenjang_pendidikan == 'SD' && @status.pesertaa_kategori == 'Disabilitas Sensori' %>
+					<tr>
+						<td>0304<%= @data.id %></td>
+					</tr>
 			<% end %>
 				</table>
 		</div>

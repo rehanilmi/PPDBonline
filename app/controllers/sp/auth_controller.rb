@@ -83,7 +83,7 @@ class Sp::AuthController < ApplicationController
           redirect_to controller: "/sp/beranda", action: "index"
 
         else
-          flash[:notif] = 'Admin status inatcive'
+          flash[:notif] = 'Admin status inactive'
 
           redirect_to action: "masuk"
         end
