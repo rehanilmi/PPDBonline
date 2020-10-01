@@ -58,7 +58,7 @@ class Sp::StafController < ApplicationController
 
        @data.staf_agama = staf[:staf_agama]
        @data.staf_status_perkawinan = staf[:staf_status_perkawinan]
-       @data.staf_photo = staf[:staf_photo]
+       # @data.staf_photo = staf[:staf_photo]
        if @data.save
          flash[:notif] = "Berhasil disimpan"
          redirect_to action: 'index'

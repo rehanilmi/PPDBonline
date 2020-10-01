@@ -37,8 +37,8 @@ class Sp::InfoController < ApplicationController
       @data.info_judul = info[:info_judul]
       @data.info_isi = info[:info_isi]
       @data.info_created_by = info[:info_created_by]
-      @data.info_photo = info[:info_photo]
-      
+      # @data.info_photo = info[:info_photo]
+
       if @data.save
         flash[:notif] = "Berhasil disimpan"
         redirect_to action: 'index'

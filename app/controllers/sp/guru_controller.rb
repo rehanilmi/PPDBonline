@@ -61,7 +61,7 @@ class Sp::GuruController < ApplicationController
        @data.guru_pendidikan_terakhir = guru[:guru_pendidikan_terakhir]
        @data.guru_agama = guru[:guru_agama]
        @data.guru_status_perkawinan = guru[:guru_status_perkawinan]
-       @data.guru_photo = guru[:guru_photo]
+       # @data.guru_photo = guru[:guru_photo]
        if @data.save
          flash[:notif] = "Berhasil disimpan"
          redirect_to action: 'index'
