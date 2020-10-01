@@ -4,7 +4,7 @@ class Sp::BerandaController < ApplicationController
 
 
   def index
-      @judul_halaman = "Dashboard"
+      # @judul_halaman = "Dashboard"
   end
 
   def tampilan

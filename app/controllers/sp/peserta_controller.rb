@@ -6,7 +6,8 @@ class Sp::PesertaController < ApplicationController
 
 
   def index
-    @datas = Pesertaa.all
+
+    @datas = Pesertaa.order('created_at').all
   end
 
   def baru
