@@ -11,7 +11,7 @@
       <th>#</th>
       <th>Nama Pengirim</th>
       <th>Subjek</th>
-      
+
     </tr>
   </thead>
   <tbody>
@@ -20,8 +20,8 @@
     <tr>
       <td>
         <a href="<%= url_for action: 'view', pesan_id: f.id %>" class="btn btn-small btn-default">View</a>
-        <a href="<%= url_for action: 'edit', pesan_id: f.id %>" class="btn btn-small btn-default">Edit</a>
-        <%= link_to 'hapus',url_for(action: :hapus, pesan_id: f.id), method: :delete, data: {confirm: "Apakah Anda yakin ingin menghapus data tersebut?"}, class: 'btn btn-small btn-default' %>
+        <a href="<%= url_for action: 'edit', pesan_id: f.id %>" class="btn btn-small btn-success">Edit</a>
+        <%= link_to 'hapus',url_for(action: :hapus, pesan_id: f.id), method: :delete, data: {confirm: "Apakah Anda yakin ingin menghapus data tersebut?"}, class: 'btn btn-small btn-danger' %>
       </td>
       <td><%= f.id %></td>
       <td><%= f.pesan_nama_pengirim %></td>

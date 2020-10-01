@@ -29,8 +29,8 @@
     <tr>
       <td>
         <a href="<%= url_for action: 'view', pesertaa_id: f.id %>" class="btn btn-small btn-default">View</a>
-        <a href="<%= url_for action: 'edit', pesertaa_id: f.id %>" class="btn btn-small btn-default">Edit</a>
-        <%= link_to 'hapus',url_for(action: :hapus, pesertaa_id: f.id), method: :delete, data: {confirm: "Apakah Anda yakin ingin menghapus data tersebut?"}, class: 'btn btn-small btn-default' %>
+        <a href="<%= url_for action: 'edit', pesertaa_id: f.id %>" class="btn btn-small btn-success">Edit</a>
+        <%= link_to 'hapus',url_for(action: :hapus, pesertaa_id: f.id), method: :delete, data: {confirm: "Apakah Anda yakin ingin menghapus data tersebut?"}, class: 'btn btn-small btn-danger' %>
       </td>
       <td><%= f.id %></td>
       <td><%= f.pesertaa_nama %></td>
