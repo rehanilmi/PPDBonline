@@ -71,7 +71,7 @@ class Sp::PesertaController < ApplicationController
        @data.pesertaa_kategori = pesertaa[:pesertaa_kategori]
        @data.pesertaa_jenjang_pendidikan = pesertaa[:pesertaa_jenjang_pendidikan]
        @data.pesertaa_status = pesertaa[:pesertaa_status]
-       @data.pesertaa_photo = pesertaa[:pesertaa_photo]
+       # @data.pesertaa_photo = pesertaa[:pesertaa_photo]
        if @data.save
          flash[:notif] = "Berhasil disimpan"
          redirect_to action: 'index'
