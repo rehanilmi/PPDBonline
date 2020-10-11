@@ -1,5 +1,7 @@
 class Oadm < ApplicationRecord
 
+  validates :oadm_email, uniqueness: true
+
   include BCrypt
 
   def valid_password?(password)

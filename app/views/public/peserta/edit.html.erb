@@ -7,7 +7,7 @@
       <div class="row">
         <%= f.label 'Nama Lengkap', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_nama, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_nama, { class: 'form-control ', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
       <div class="row">
         <%= f.label 'Tanggal Lahir', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.date_field :pesertaa_tanggal_lahir, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.date_field :pesertaa_tanggal_lahir, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="row">
         <%= f.label 'Tempat Lahir', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_tempat_lahir, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_tempat_lahir, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
       <div class="row">
         <%= f.label 'NIK', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_nik, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_nik, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
       <div class="row">
         <%= f.label 'Jenis Kelamin', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.select(:pesertaa_jk, ['Laki-laki', 'Perempuan'], {}, { class: 'form-control-lg', style: 'font-size:13px' } )%>
+            <%= f.select(:pesertaa_jk, ['Laki-laki', 'Perempuan'], {}, { class: 'form-control-lg', style: 'font-size:13px', required: '' } )%>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
       <div class="row">
         <%= f.label 'Alamat Lengkap', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_area :pesertaa_alamat, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_area :pesertaa_alamat, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
       <div class="row">
         <%= f.label 'Nama Ayah', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_nama_ayah, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_nama_ayah, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
       <div class="row">
         <%= f.label 'Nama Ibu', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_nama_ibu, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_nama_ibu, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
       <div class="row">
         <%= f.label 'Telepon', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_telepon, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_telepon, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -89,7 +89,7 @@
       <div class="row">
         <%= f.label 'Tinggi Badan', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_tinggi, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_tinggi, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -98,7 +98,7 @@
       <div class="row">
         <%= f.label 'Berat Badan', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_bb, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_bb, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@
       <div class="row">
         <%= f.label 'Golongan Darah', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_gol_darah, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_gol_darah, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@
       <div class="row">
         <%= f.label 'Jarak Rumah Kesekolah', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_jarak_sekolah, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_jarak_sekolah, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@
       <div class="row">
         <%= f.label 'Jumlah Saudara', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_jumlah_saudara, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_jumlah_saudara, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -134,7 +134,7 @@
       <div class="row">
         <%= f.label 'Bahasa Sehari-hari', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.text_field :pesertaa_bahasa_seharihari, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.text_field :pesertaa_bahasa_seharihari, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
@@ -143,7 +143,7 @@
       <div class="row">
         <%= f.label 'Kategori Disabilitas', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-8">
-            <%= f.select(:pesertaa_kategori, ['Disabilitas Fisik', 'Disabilitas Intelektual', 'Disabilitas Mental', 'Disabilitas Sensori'], {}, { class: 'form-control-lg', placeholder: '' } )%>
+            <%= f.select(:pesertaa_kategori, ['Disabilitas Fisik', 'Disabilitas Intelektual', 'Disabilitas Mental', 'Disabilitas Sensori'], {}, { class: 'form-control-lg', placeholder: '', required: '' } )%>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
       <div class="row">
         <%= f.label 'Jenjang Pendidikan', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.select(:pesertaa_jenjang_pendidikan, ['SMA', 'SMP', 'SD'], {}, { class: 'form-control-lg', style: 'font-size:13px' } )%>
+            <%= f.select(:pesertaa_jenjang_pendidikan, ['SMA', 'SMP', 'SD'], {}, { class: 'form-control-lg', style: 'font-size:13px', required: '' } )%>
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
       <div class="row">
         <%= f.label 'Photo', { class: 'col-md-2', style: 'font-size:13px' } %>
         <div class="col-md-10">
-            <%= f.file_field :pesertaa_photo, { class: 'form-control', style: 'font-size:13px' } %>
+            <%= f.file_field :pesertaa_photo, { class: 'form-control', style: 'font-size:13px', required: '' } %>
         </div>
       </div>
     </div>
